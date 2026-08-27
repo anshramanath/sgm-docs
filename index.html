@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="sun.png">
+<title>SGM Documentation</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -22,36 +23,38 @@
   a:hover { opacity: 0.6; }
   summary::-webkit-details-marker { display: none; }
   summary { list-style: none; cursor: pointer; }
+  code, pre { overflow-wrap: break-word; }
+  img { max-width: 100%; }
 </style>
 </helmet>
 
-<div style="max-width: 100%; overflow-x: hidden; padding: 0 40px 0 40px; box-sizing: border-box;">
+<div style="max-width: 100%; overflow-x: hidden; padding: 0 clamp(16px, 4vw, 40px); box-sizing: border-box;">
 
-  <header style="max-width: 1080px; margin: 0 auto; padding: 40px 0 0 0; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #E2E2E2; padding-bottom: 16px;">
+  <header style="max-width: 1080px; margin: 0 auto; padding: clamp(24px, 4vw, 40px) 0 16px 0; display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #E2E2E2;">
     <span style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase;">Sunglass Monster Platform</span>
     <span style="font-size: 13px; font-weight: 400; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E;">May 27 &ndash; Aug 24, 2026</span>
   </header>
 
-  <section style="max-width: 1080px; margin: 0 auto; padding: 120px 0 96px 0;">
+  <section style="max-width: 1080px; margin: 0 auto; padding: clamp(56px, 11vw, 120px) 0 clamp(48px, 9vw, 96px) 0;">
     <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 40px 0;">Full-stack rebuild &middot; solo build</p>
-    <h1 style="font-size: 68px; font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0; max-width: 20ch; text-wrap: pretty;">870+ products. Three storefronts. One summer.</h1>
-    <p style="font-size: 18px; font-weight: 400; line-height: 1.55; color: #4A4A4A; margin: 40px 0 0 0; max-width: 62ch; text-wrap: pretty;">Three aging WooCommerce stores &mdash; BikerShades, ProSport Sunglasses, and Sunglass Monster &mdash; replaced with one Next.js platform on a shared multi-brand Postgres schema: a 17-step migration pipeline, Stripe webhook-driven orders, a custom admin dashboard, two bespoke commerce flows, and a live production cutover with zero data mismatches.</p>
+    <h1 style="font-size: clamp(34px, 7.4vw, 68px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0; max-width: 20ch; text-wrap: pretty;">870+ products. Three storefronts. One summer.</h1>
+    <p style="font-size: clamp(16px, 1.9vw, 18px); font-weight: 400; line-height: 1.55; color: #4A4A4A; margin: clamp(24px, 4vw, 40px) 0 0 0; max-width: 62ch; text-wrap: pretty;">Three aging WooCommerce stores &mdash; BikerShades, ProSport Sunglasses, and Sunglass Monster &mdash; replaced with one Next.js platform on a shared multi-brand Postgres schema: a 17-step migration pipeline, Stripe webhook-driven orders, a custom admin dashboard, two bespoke commerce flows, and a live production cutover with zero data mismatches.</p>
   </section>
 
-  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #000000; padding: 48px 0 96px 0;">
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px 32px;">
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">870+</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Products migrated</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">9,633</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Variations imported</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">3,108</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Product images rehosted</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">Zero</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Mismatches at go-live</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">13</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Weeks, documented</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">154</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Session write-ups</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">86</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Rx frames catalogued</div></div>
-      <div><div style="font-size: 44px; font-weight: 400; line-height: 1; letter-spacing: -0.01em;">17</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Pipeline steps</div></div>
+  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #000000; padding: clamp(28px, 5vw, 48px) 0 clamp(48px, 9vw, 96px) 0;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: clamp(28px, 5vw, 48px) clamp(20px, 3vw, 32px);">
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">870+</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Products migrated</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">9,633</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Variations imported</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">3,108</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Product images rehosted</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">Zero</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Mismatches at go-live</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">13</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Weeks, documented</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">154</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Session write-ups</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">86</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Rx frames catalogued</div></div>
+      <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">17</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Pipeline steps</div></div>
     </div>
   </section>
 
-  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #E2E2E2; padding: 64px 0 96px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #E2E2E2; padding: clamp(36px, 6vw, 64px) 0 clamp(48px, 9vw, 96px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 7vw, 80px);">
     <div>
       <h2 style="font-size: 21px; font-weight: 500; margin: 0 0 24px 0;">What it actually was</h2>
       <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; text-wrap: pretty;">The brief was &ldquo;migrate WooCommerce.&rdquo; What it became was determining the authoritative source of truth for every piece of product data. The legacy store, the inventory system, and the new database each turned out to be right about different things, and working out which was which shaped nearly every technical decision that followed.</p>
@@ -59,7 +62,7 @@
     </div>
     <div>
       <h2 style="font-size: 21px; font-weight: 500; margin: 0 0 24px 0;">Stack</h2>
-      <dl style="margin: 0; display: grid; grid-template-columns: 140px 1fr; gap: 14px 24px; font-size: 15px; line-height: 1.4;">
+      <dl style="margin: 0; display: grid; grid-template-columns: minmax(96px, 140px) 1fr; gap: 14px clamp(16px, 2.5vw, 24px); font-size: 15px; line-height: 1.4;">
         <dt style="color: #6E6E6E;">Frontend</dt><dd style="margin: 0;">Next.js 16 App Router, React Server Components, Tailwind, shadcn/ui</dd>
         <dt style="color: #6E6E6E;">Backend</dt><dd style="margin: 0;">Next.js API routes &mdash; public, authenticated, admin</dd>
         <dt style="color: #6E6E6E;">Database</dt><dd style="margin: 0;">Supabase &mdash; Postgres, Storage, Auth, RLS throughout</dd>
@@ -73,21 +76,21 @@
   </section>
 
   <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
-    <h2 style="font-size: 56px; font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Six threads</h2>
+    <h2 style="font-size: clamp(30px, 6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Six threads</h2>
     <p style="font-size: 16px; line-height: 1.55; color: #4A4A4A; margin: 0; max-width: 60ch;">One per major area of the project. What I did, then what the notes recorded at the time &mdash; decisions, rationale, and the bugs worth remembering.</p>
   </section>
 
-  <article style="max-width: 1080px; margin: 0 auto; padding: 96px 0 0 0;">
-    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start;">
-      <span style="font-size: 34px; font-weight: 400; color: #C9C9C9; line-height: 1;">01</span>
-      <div>
-        <h3 style="font-size: 34px; font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Data migration and the SKU forensics problem</h3>
+  <article style="max-width: 1080px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) 0 0 0;">
+    <div style="display: grid; grid-template-columns: clamp(36px, 7vw, 80px) 1fr; gap: clamp(14px, 3vw, 32px); align-items: start;">
+      <span style="font-size: clamp(20px, 3.4vw, 34px); font-weight: 400; color: #C9C9C9; line-height: 1;">01</span>
+      <div style="min-width: 0;">
+        <h3 style="font-size: clamp(23px, 4vw, 34px); font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Data migration and the SKU forensics problem</h3>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">Did</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 32px 0; max-width: 72ch; text-wrap: pretty;">Built a pipeline that pulled ~1,650 products off three legacy WooCommerce stores and audited every field against multiple sources &mdash; WooCommerce, Veeqo, the new database &mdash; to establish which one was authoritative for each piece of data. The pipeline is crash-safe end to end: checkpoints after every variation, resumable by diffing what is already saved, and atomic writes so a kill mid-<code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">json.dump()</code> can&rsquo;t leave a corrupted checkpoint.</p>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">From the notes</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">BikerShades variation SKUs follow a <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">{modelBase}-{frameColor}-{lensType}-{strength?}-{suffix?}</code> pattern, while parent SKUs carry WooCommerce dedupe junk (<code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">-0</code>, <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">-0-XT</code>, <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">-Master-MFB</code>, <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">-COMBOS</code>) that must never be used to derive the real product SKU &mdash; deriving from the parent produced 200+ false duplicate flags. WooCommerce also groups genuinely different products under one listing: polarized (<code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">CAPL</code>) versus non-polarized (<code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">CA</code>), old versus revised SKUs. A &ldquo;base SKU mismatch&rdquo; check caught those, then immediately over-flagged legitimate combo products, where a single leading <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">C</code> is meaningful.</p>
         <sc-if value="{{ showCode }}" hint-placeholder-val="{{ true }}">
-          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: 24px; margin: 0 0 20px 0; overflow-x: auto; white-space: pre;">CPR29X36ST  vs  PR29X36ST     -> same family (combo prefix)
+          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: clamp(11px, 1.6vw, 13px); line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: clamp(14px, 3vw, 24px); max-width: 100%; margin: 0 0 20px 0; overflow-x: auto; white-space: pre; min-width: 0;">CPR29X36ST  vs  PR29X36ST     -> same family (combo prefix)
 CAPL...     vs  CA...          -> different products
 one normalization rule for a single leading "C":
   +12 products, +437 variations recovered</pre>
@@ -96,22 +99,22 @@ one normalization rule for a single leading "C":
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">The two lines the notes state twice, independently: the project started as &ldquo;migrate WooCommerce&rdquo; and became &ldquo;determine the authoritative source of truth for every piece of product data&rdquo; &mdash; and WooCommerce&rsquo;s only truly trustworthy artifact turned out to be SKUs, not the product data around them.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="database-001-004-overview-cropped.png" alt="Supabase schema visualizer showing the multi-brand catalogue tables" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The multi-brand schema &mdash; <code style="font-family: ui-monospace, Menlo, monospace; font-size: 13px;">brand_slug</code> on every relevant table.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-admin-products-page.png" alt="Admin products list showing migrated BikerShades catalogue" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The migrated catalogue, in the admin product list.</figcaption></figure>
     </div>
   </article>
 
-  <article style="max-width: 1080px; margin: 0 auto; padding: 96px 0 0 0; border-top: 1px solid #E2E2E2; margin-top: 96px;">
-    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start;">
-      <span style="font-size: 34px; font-weight: 400; color: #C9C9C9; line-height: 1;">02</span>
-      <div>
-        <h3 style="font-size: 34px; font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Payments &mdash; Stripe webhooks and two layers of idempotency</h3>
+  <article style="max-width: 1080px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) 0 0 0; border-top: 1px solid #E2E2E2; margin-top: clamp(48px, 9vw, 96px);">
+    <div style="display: grid; grid-template-columns: clamp(36px, 7vw, 80px) 1fr; gap: clamp(14px, 3vw, 32px); align-items: start;">
+      <span style="font-size: clamp(20px, 3.4vw, 34px); font-weight: 400; color: #C9C9C9; line-height: 1;">02</span>
+      <div style="min-width: 0;">
+        <h3 style="font-size: clamp(23px, 4vw, 34px); font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Payments &mdash; Stripe webhooks and two layers of idempotency</h3>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">Did</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 32px 0; max-width: 72ch; text-wrap: pretty;">Chose hosted Stripe Checkout Sessions over Payment Links or custom Elements &mdash; address validation, tax, 3D Secure, fraud, and PCI scope are exactly what the hosted page absorbs. Orders are created only in the webhook, never at checkout-session creation, with two independent idempotency layers and atomic Postgres RPCs for sales counters.</p>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">From the notes</p>
         <sc-if value="{{ showCode }}" hint-placeholder-val="{{ true }}">
-          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: 24px; margin: 0 0 20px 0; overflow-x: auto; white-space: pre;">layer 1  Stripe idempotency key   -> double-clicked checkout
+          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: clamp(11px, 1.6vw, 13px); line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: clamp(14px, 3vw, 24px); max-width: 100%; margin: 0 0 20px 0; overflow-x: auto; white-space: pre; min-width: 0;">layer 1  Stripe idempotency key   -> double-clicked checkout
                                      can't create two sessions
 layer 2  DB unique constraint      -> the same webhook event
                                      delivered twice can't
@@ -126,24 +129,24 @@ RLS      orders / order_items are SELECT-only for
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">Later correctness passes caught the kind of bug that only shows up in production: an expired Stripe session being handed back to a user resubmitting a form, and <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">customer_email</code> being set from an unverified form field instead of the authenticated user&rsquo;s actual email.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="prod-checkout-page.png" alt="Order review page handing off to Stripe" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Order review &mdash; no custom card fields, by design.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-stripe-checkout.png" alt="Stripe hosted checkout in live mode" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Stripe hosted checkout, live mode.</figcaption></figure>
     </div>
   </article>
 
-  <article style="max-width: 1080px; margin: 0 auto; padding: 96px 0 0 0; border-top: 1px solid #E2E2E2; margin-top: 96px;">
-    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start;">
-      <span style="font-size: 34px; font-weight: 400; color: #C9C9C9; line-height: 1;">03</span>
-      <div>
-        <h3 style="font-size: 34px; font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Frontend state &mdash; providers, streaming, and the auth-flash bug</h3>
+  <article style="max-width: 1080px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) 0 0 0; border-top: 1px solid #E2E2E2; margin-top: clamp(48px, 9vw, 96px);">
+    <div style="display: grid; grid-template-columns: clamp(36px, 7vw, 80px) 1fr; gap: clamp(14px, 3vw, 32px); align-items: start;">
+      <span style="font-size: clamp(20px, 3.4vw, 34px); font-weight: 400; color: #C9C9C9; line-height: 1;">03</span>
+      <div style="min-width: 0;">
+        <h3 style="font-size: clamp(23px, 4vw, 34px); font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Frontend state &mdash; providers, streaming, and the auth-flash bug</h3>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">Did</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 32px 0; max-width: 72ch; text-wrap: pretty;">Built cart, bookmark, and auth state as a nested provider stack &mdash; <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">AuthProvider</code> &rarr; <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">CartProvider</code> &rarr; <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">BookmarkProvider</code> &mdash; with <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">Map</code>-based state and 800ms-debounced database writes, on top of Suspense-streamed category pages. State lives in the URL rather than React state wherever shareability and crawlability matter.</p>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">From the notes</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">Guest carts store only <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">productId</code>, <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">variationId</code>, and <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">quantity</code> in localStorage &mdash; never price, stock, or images, which always come fresh from the backend. The cart key is <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">productSlug:sku</code> end to end; the frontend and backend tracks converged on that composite key independently. A cross-brand pollution bug showed up early too: the bookmarks endpoint was missing its brand filter and was merging all three brands&rsquo; bookmarks into one list.</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">The best-documented bug of the project is the auth flash. Logged-in users saw &ldquo;Sign In&rdquo; for a beat on every page load before it flipped to their profile icon. The navbar was combining a server-accurate <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">isSignedIn</code> boolean with a client-side <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">loggedIn</code> flag that always started <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">false</code> and only became accurate after a <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">useEffect</code> ran. Two states had been used to model three.</p>
         <sc-if value="{{ showCode }}" hint-placeholder-val="{{ true }}">
-          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: 24px; margin: 0 0 20px 0; overflow-x: auto; white-space: pre;">- const [loggedIn, setLoggedIn] = useState(false);
+          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: clamp(11px, 1.6vw, 13px); line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: clamp(14px, 3vw, 24px); max-width: 100%; margin: 0 0 20px 0; overflow-x: auto; white-space: pre; min-width: 0;">- const [loggedIn, setLoggedIn] = useState(false);
 + const [loggedIn, setLoggedIn] = useState(null); // undetermined
 
 - show = isSignedIn && loggedIn
@@ -152,24 +155,24 @@ RLS      orders / order_items are SELECT-only for
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">One line, no changes anywhere else, because <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">null</code> is falsy everywhere the flag was already read. It defers to the server&rsquo;s answer until the client has one, and stays accurate afterwards &mdash; which is what makes the related case work too: a background cart-sync 401 mid-session no longer leaves the header claiming a signed-in state that has actually expired.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="frontend-bookmarks-local-storage.png" alt="Bookmarks persisted in localStorage, inspected in devtools" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Guest bookmarks in localStorage &mdash; slugs only, no prices.</figcaption></figure>
       <figure style="margin: 0;"><img src="backend-nextjs-debugger.png" alt="VS Code debugger paused on a breakpoint in a Next.js API route" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Breakpoint debugging inside a Next.js route handler.</figcaption></figure>
     </div>
   </article>
 
-  <article style="max-width: 1080px; margin: 0 auto; padding: 96px 0 0 0; border-top: 1px solid #E2E2E2; margin-top: 96px;">
-    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start;">
-      <span style="font-size: 34px; font-weight: 400; color: #C9C9C9; line-height: 1;">04</span>
-      <div>
-        <h3 style="font-size: 34px; font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Try Before You Buy &mdash; kept outside the main cart</h3>
+  <article style="max-width: 1080px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) 0 0 0; border-top: 1px solid #E2E2E2; margin-top: clamp(48px, 9vw, 96px);">
+    <div style="display: grid; grid-template-columns: clamp(36px, 7vw, 80px) 1fr; gap: clamp(14px, 3vw, 32px); align-items: start;">
+      <span style="font-size: clamp(20px, 3.4vw, 34px); font-weight: 400; color: #C9C9C9; line-height: 1;">04</span>
+      <div style="min-width: 0;">
+        <h3 style="font-size: clamp(23px, 4vw, 34px); font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Try Before You Buy &mdash; kept outside the main cart</h3>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">Did</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 32px 0; max-width: 72ch; text-wrap: pretty;">Designed and shipped a complete BikerShades-only feature &mdash; seven deposit-tier packages, a three-step prescription intake with file uploads, Stripe checkout, admin fulfillment tooling with carrier and tracking, and customer-facing history on the account page &mdash; as its own flow rather than through the existing cart.</p>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">From the notes</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">The architectural call is stated plainly in the design notes: TBYB deliberately does not go through the existing cart, because adding nullable branching throughout cart code for one single-brand feature wasn&rsquo;t worth the complexity.</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">The submissions table was redesigned two days after it was built, from FK-referenced to fully denormalized: a submission stores a complete snapshot of the package captured at submission time, with no foreign key back to the live catalogue at all. Historical submissions have to stay stable even if a package is later renamed, repriced, or deleted &mdash; drift-proof history over referential purity, consciously chosen for what is really a financial and fulfillment record. All 28 columns are <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">NOT NULL</code>, with optional fields sent as the literal string <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">"None"</code>, so a missing field fails the insert atomically instead of writing a partial row.</p>
         <sc-if value="{{ showCode }}" hint-placeholder-val="{{ true }}">
-          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: 24px; margin: 0 0 20px 0; overflow-x: auto; white-space: pre;">duplicate prevention
+          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: clamp(11px, 1.6vw, 13px); line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: clamp(14px, 3vw, 24px); max-width: 100%; margin: 0 0 20px 0; overflow-x: auto; white-space: pre; min-width: 0;">duplicate prevention
   partial unique index on form_hash WHERE not paid
   + the genuine race: two concurrent requests hash
     identically -> catch the unique violation, loser
@@ -183,24 +186,24 @@ security
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">Two smaller things worth keeping. File uploads were pulled out of React state entirely and fired only from an explicit user action, after a <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">useEffect</code> watching form state was found clobbering a URL that had just been restored from localStorage. And mobile uploads were failing silently until the cause surfaced: Next.js server actions cap request bodies at 1MB by default, while phone camera photos run 3&ndash;10MB.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; margin-top: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="prod-tbyb-page.png" alt="Try Before You Buy package grid on the live site" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Deposit packages, live.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-tbyb-form.png" alt="Try Before You Buy prescription intake form" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Prescription intake, step by step.</figcaption></figure>
       <figure style="margin: 0;"><img src="claude-design-admin-tbyb.png" alt="Admin TBYB fulfillment view design mockup" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Admin fulfillment view, at design stage.</figcaption></figure>
     </div>
   </article>
 
-  <article style="max-width: 1080px; margin: 0 auto; padding: 96px 0 0 0; border-top: 1px solid #E2E2E2; margin-top: 96px;">
-    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start;">
-      <span style="font-size: 34px; font-weight: 400; color: #C9C9C9; line-height: 1;">05</span>
-      <div>
-        <h3 style="font-size: 34px; font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Product copy for 882 products, via an MCP server</h3>
+  <article style="max-width: 1080px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) 0 0 0; border-top: 1px solid #E2E2E2; margin-top: clamp(48px, 9vw, 96px);">
+    <div style="display: grid; grid-template-columns: clamp(36px, 7vw, 80px) 1fr; gap: clamp(14px, 3vw, 32px); align-items: start;">
+      <span style="font-size: clamp(20px, 3.4vw, 34px); font-weight: 400; color: #C9C9C9; line-height: 1;">05</span>
+      <div style="min-width: 0;">
+        <h3 style="font-size: clamp(23px, 4vw, 34px); font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Product copy for 882 products, via an MCP server</h3>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">Did</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 32px 0; max-width: 72ch; text-wrap: pretty;">Built a FastMCP server that Claude Desktop drives over stdio to generate descriptions and summaries for 882 products across three brands from their actual product photos &mdash; raw image bytes, so the copy describes what is visible rather than inferred specs. The loop is <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">get_next_product</code> &rarr; look at the image &rarr; generate &rarr; <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">save_content</code>, repeating until <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">get_progress</code> reports zero remaining.</p>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">From the notes</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">The interesting part is not the generation, it is the gate. <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">save_content</code> is a validator that returns <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">VALIDATION FAILED</code> and refuses the write.</p>
         <sc-if value="{{ showCode }}" hint-placeholder-val="{{ true }}">
-          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: 24px; margin: 0 0 20px 0; overflow-x: auto; white-space: pre;">save_content rejects:
+          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: clamp(11px, 1.6vw, 13px); line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: clamp(14px, 3vw, 24px); max-width: 100%; margin: 0 0 20px 0; overflow-x: auto; white-space: pre; min-width: 0;">save_content rejects:
   > 80 words
   raw measurements
   banned marketing phrases
@@ -210,24 +213,24 @@ security
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">A 16-check Python validator and an idempotent migration script carried that dataset in: 86 of 86 frames migrated, four brands.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="migration-mcp-prompt.png" alt="The MCP-driven content generation loop running in Claude Desktop" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The generation loop, running unattended.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-product-page.png" alt="Live product detail page with generated copy" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The output, on a live product page.</figcaption></figure>
     </div>
   </article>
 
-  <article style="max-width: 1080px; margin: 0 auto; padding: 96px 0 0 0; border-top: 1px solid #E2E2E2; margin-top: 96px;">
-    <div style="display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start;">
-      <span style="font-size: 34px; font-weight: 400; color: #C9C9C9; line-height: 1;">06</span>
-      <div>
-        <h3 style="font-size: 34px; font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Launch &mdash; domain cutover and a production data reset with no fallback</h3>
+  <article style="max-width: 1080px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) 0 0 0; border-top: 1px solid #E2E2E2; margin-top: clamp(48px, 9vw, 96px);">
+    <div style="display: grid; grid-template-columns: clamp(36px, 7vw, 80px) 1fr; gap: clamp(14px, 3vw, 32px); align-items: start;">
+      <span style="font-size: clamp(20px, 3.4vw, 34px); font-weight: 400; color: #C9C9C9; line-height: 1;">06</span>
+      <div style="min-width: 0;">
+        <h3 style="font-size: clamp(23px, 4vw, 34px); font-weight: 400; line-height: 1.2; margin: 0 0 32px 0;">Launch &mdash; domain cutover and a production data reset with no fallback</h3>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">Did</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 32px 0; max-width: 72ch; text-wrap: pretty;">Moved three live domains off WordPress and SiteGround onto Vercel &mdash; DNS records, SPF, DKIM, DMARC, Resend transactional email, branded auth email templates &mdash; enabled RLS across all catalogue tables, built a maintenance-mode kill switch specifically so a site could be taken down safely mid-cutover, flipped Stripe to live mode, and then reset and reimported the entire production database and Storage from scratch.</p>
         <p style="font-size: 13px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin: 0 0 12px 0;">From the notes</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">During that reimport, all three original legacy WooCommerce sites turned out to have become partially unreachable since the original scrape. There was no fallback: the source of the images was gone, and the images had just been deleted.</p>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; max-width: 72ch; text-wrap: pretty;">Two properties of the pipeline, both decided months earlier for unrelated reasons, made the recovery possible. Image filenames are a deterministic pure function of the source URL &mdash; the full path after <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">/uploads/</code>, chosen back in May to avoid collisions from WordPress date folders. And Supabase Storage never deletes or re-encodes anything. So every filename was re-derived from the URLs in the raw JSON backups and every image re-downloaded byte-for-byte identical from Storage itself, instead of from the dead sites.</p>
         <sc-if value="{{ showCode }}" hint-placeholder-val="{{ true }}">
-          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: 24px; margin: 0 0 20px 0; overflow-x: auto; white-space: pre;">recovered  prosport     355 / 355
+          <pre style="font-family: ui-monospace, Menlo, monospace; font-size: clamp(11px, 1.6vw, 13px); line-height: 1.7; background: #F6F6F6; border: 1px solid #E2E2E2; padding: clamp(14px, 3vw, 24px); max-width: 100%; margin: 0 0 20px 0; overflow-x: auto; white-space: pre; min-width: 0;">recovered  prosport     355 / 355
            monster      705 / 706
            bikershades 2224 / 2255
 the two shortfalls were pre-existing 404s, not new losses
@@ -236,17 +239,17 @@ final verification: zero mismatches, every table, all brands</pre>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">A day later a second, independent Supabase project was stood up as staging using the same pipeline, catching three environment-hygiene bugs on the way, and verified as an exact match with production across every table. One other launch-day detail worth naming: all 13 files using <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">next/image</code> were switched to native <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">&lt;img loading="lazy"&gt;</code>, because Vercel&rsquo;s image-optimization free tier was being exceeded across three deployments and images were failing to alt text.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="frontend-prod-503-maintainence-redirect.png" alt="Maintenance mode page served during the domain cutover" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The kill switch, mid-cutover.</figcaption></figure>
       <figure style="margin: 0;"><img src="database-prod-005.png" alt="Production database schema after the clean reimport" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Production, after the clean reimport.</figcaption></figure>
     </div>
   </article>
 
   <sc-if value="{{ showGallery }}" hint-placeholder-val="{{ true }}">
-    <section style="max-width: 1080px; margin: 96px auto 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
-      <h2 style="font-size: 56px; font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Shipped</h2>
+    <section style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
+      <h2 style="font-size: clamp(30px, 6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Shipped</h2>
       <p style="font-size: 16px; line-height: 1.55; color: #4A4A4A; margin: 0 0 48px 0; max-width: 60ch;">Three storefronts on one codebase, plus the admin dashboard that runs them.</p>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 4px;">
         <figure style="margin: 0;"><img src="prod-bikershades-landing-page.png" alt="BikerShades storefront homepage" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">bikershades.com</figcaption></figure>
         <figure style="margin: 0;"><img src="prod-prosport-landing-page.png" alt="ProSport Sunglasses storefront homepage" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">prosportsunglasses.com</figcaption></figure>
         <figure style="margin: 0;"><img src="prod-sunglass-monster-landing-page.png" alt="Sunglass Monster storefront homepage" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">sunglassmonster.com</figcaption></figure>
@@ -261,13 +264,13 @@ final verification: zero mismatches, every table, all brands</pre>
   </sc-if>
 
   <sc-if value="{{ showTimeline }}" hint-placeholder-val="{{ true }}">
-    <section style="max-width: 1080px; margin: 96px auto 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
-      <h2 style="font-size: 56px; font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Appendix &mdash; nine phases</h2>
+    <section style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
+      <h2 style="font-size: clamp(30px, 6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Appendix &mdash; nine phases</h2>
       <p style="font-size: 16px; line-height: 1.55; color: #4A4A4A; margin: 0 0 48px 0; max-width: 60ch;">The chronological build, condensed from the session notes. Expand any phase.</p>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">1 &nbsp;&middot;&nbsp; Migration pipeline kickoff</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">1 &nbsp;&middot;&nbsp; Migration pipeline kickoff</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">May 27&ndash;31</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -279,8 +282,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">2 &nbsp;&middot;&nbsp; Multi-brand migration and architecture</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">2 &nbsp;&middot;&nbsp; Multi-brand migration and architecture</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Jun 1&ndash;7</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -291,8 +294,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">3 &nbsp;&middot;&nbsp; Migration complete, first live storefront, payments</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">3 &nbsp;&middot;&nbsp; Migration complete, first live storefront, payments</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Jun 10&ndash;19</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -303,8 +306,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">4 &nbsp;&middot;&nbsp; Parallel backend and frontend build-out</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">4 &nbsp;&middot;&nbsp; Parallel backend and frontend build-out</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Jun 20&ndash;27</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -315,8 +318,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">5 &nbsp;&middot;&nbsp; Admin dashboard, refunds, design system</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">5 &nbsp;&middot;&nbsp; Admin dashboard, refunds, design system</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Jul 1&ndash;8</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -327,8 +330,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">6 &nbsp;&middot;&nbsp; Admin product management, TBYB launch</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">6 &nbsp;&middot;&nbsp; Admin product management, TBYB launch</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Jul 15&ndash;31</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -339,8 +342,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">7 &nbsp;&middot;&nbsp; TBYB productionization</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">7 &nbsp;&middot;&nbsp; TBYB productionization</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Aug 1&ndash;7</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -350,8 +353,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">8 &nbsp;&middot;&nbsp; Rx prescription frames</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">8 &nbsp;&middot;&nbsp; Rx prescription frames</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Aug 10&ndash;14</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -362,8 +365,8 @@ final verification: zero mismatches, every table, all brands</pre>
       </details>
 
       <details style="border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2;">
-        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 24px 0;">
-          <span style="font-size: 21px; font-weight: 500;">9 &nbsp;&middot;&nbsp; Final polish and production launch</span>
+        <summary style="display: flex; justify-content: space-between; align-items: baseline; gap: clamp(10px, 2vw, 24px); padding: clamp(18px, 3vw, 24px) 0; flex-wrap: wrap;">
+          <span style="font-size: clamp(17px, 2.4vw, 21px); font-weight: 500;">9 &nbsp;&middot;&nbsp; Final polish and production launch</span>
           <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; white-space: nowrap;">Aug 16&ndash;24</span>
         </summary>
         <div style="padding: 0 0 32px 0; max-width: 76ch;">
@@ -375,8 +378,8 @@ final verification: zero mismatches, every table, all brands</pre>
     </section>
   </sc-if>
 
-  <footer style="max-width: 1080px; margin: 96px auto 0 auto; border-top: 1px solid #000000; padding: 40px 0 80px 0; display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap;">
-    <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E;">BikerShades &middot; ProSport Sunglasses &middot; Sunglass Monster</span>
+  <footer style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: clamp(28px, 5vw, 40px) 0 clamp(48px, 8vw, 80px) 0; display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap;">
+    <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; display: flex; flex-wrap: wrap; gap: 4px 10px;"><span>BikerShades</span><span>&middot;</span><span>ProSport Sunglasses</span><span>&middot;</span><span>Sunglass Monster</span></span>
     <span style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E;">Live in production, August 2026</span>
   </footer>
 
