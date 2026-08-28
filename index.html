@@ -42,7 +42,7 @@
   </section>
 
   <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #000000; padding: clamp(28px, 5vw, 48px) 0 clamp(48px, 9vw, 96px) 0;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: clamp(28px, 5vw, 48px) clamp(20px, 3vw, 32px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(150px, 22%), 1fr)); gap: clamp(28px, 5vw, 48px) clamp(20px, 3vw, 32px);">
       <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">870+</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Products migrated</div></div>
       <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">9,633</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Variations imported</div></div>
       <div><div style="font-size: clamp(30px, 4.6vw, 44px); font-weight: 400; line-height: 1; letter-spacing: -0.01em;">3,108</div><div style="font-size: 13px; letter-spacing: 0.10em; text-transform: uppercase; color: #6E6E6E; margin-top: 12px;">Product images rehosted</div></div>
@@ -54,7 +54,7 @@
     </div>
   </section>
 
-  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #E2E2E2; padding: clamp(36px, 6vw, 64px) 0 clamp(48px, 9vw, 96px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 7vw, 80px);">
+  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #E2E2E2; padding: clamp(36px, 6vw, 64px) 0 clamp(48px, 9vw, 96px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(max(300px, 45%), 1fr)); gap: clamp(40px, 7vw, 80px);">
     <div>
       <h2 style="font-size: 21px; font-weight: 500; margin: 0 0 24px 0;">What it actually was</h2>
       <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0 0 20px 0; text-wrap: pretty;">The brief was &ldquo;migrate WooCommerce.&rdquo; What it became was determining the authoritative source of truth for every piece of product data. The legacy store, the inventory system, and the new database each turned out to be right about different things, and working out which was which shaped nearly every technical decision that followed.</p>
@@ -75,7 +75,7 @@
     </div>
   </section>
 
-  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
+  <section style="max-width: 1080px; margin: 0 auto; border-top: 1px solid #000000; padding: clamp(28px, 5vw, 48px) 0 0 0;">
     <h2 style="font-size: clamp(30px, 6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Six threads</h2>
     <p style="font-size: 16px; line-height: 1.55; color: #4A4A4A; margin: 0; max-width: 60ch;">One per major area of the project. What I did, then what the notes recorded at the time &mdash; decisions, rationale, and the bugs worth remembering.</p>
   </section>
@@ -99,7 +99,7 @@ one normalization rule for a single leading "C":
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">The two lines the notes state twice, independently: the project started as &ldquo;migrate WooCommerce&rdquo; and became &ldquo;determine the authoritative source of truth for every piece of product data&rdquo; &mdash; and WooCommerce&rsquo;s only truly trustworthy artifact turned out to be SKUs, not the product data around them.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(260px, 45%), 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="database-001-004-overview-cropped.png" alt="Supabase schema visualizer showing the multi-brand catalogue tables" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The multi-brand schema &mdash; <code style="font-family: ui-monospace, Menlo, monospace; font-size: 13px;">brand_slug</code> on every relevant table.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-admin-products-page.png" alt="Admin products list showing migrated BikerShades catalogue" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The migrated catalogue, in the admin product list.</figcaption></figure>
     </div>
@@ -129,7 +129,7 @@ RLS      orders / order_items are SELECT-only for
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">Later correctness passes caught the kind of bug that only shows up in production: an expired Stripe session being handed back to a user resubmitting a form, and <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">customer_email</code> being set from an unverified form field instead of the authenticated user&rsquo;s actual email.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(260px, 45%), 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="prod-checkout-page.png" alt="Order review page handing off to Stripe" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Order review &mdash; no custom card fields, by design.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-stripe-checkout.png" alt="Stripe hosted checkout in live mode" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Stripe hosted checkout, live mode.</figcaption></figure>
     </div>
@@ -155,7 +155,7 @@ RLS      orders / order_items are SELECT-only for
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">One line, no changes anywhere else, because <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">null</code> is falsy everywhere the flag was already read. It defers to the server&rsquo;s answer until the client has one, and stays accurate afterwards &mdash; which is what makes the related case work too: a background cart-sync 401 mid-session no longer leaves the header claiming a signed-in state that has actually expired.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(260px, 45%), 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="frontend-bookmarks-local-storage.png" alt="Bookmarks persisted in localStorage, inspected in devtools" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Guest bookmarks in localStorage &mdash; slugs only, no prices.</figcaption></figure>
       <figure style="margin: 0;"><img src="backend-nextjs-debugger.png" alt="VS Code debugger paused on a breakpoint in a Next.js API route" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Breakpoint debugging inside a Next.js route handler.</figcaption></figure>
     </div>
@@ -186,7 +186,7 @@ security
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">Two smaller things worth keeping. File uploads were pulled out of React state entirely and fired only from an explicit user action, after a <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">useEffect</code> watching form state was found clobbering a URL that had just been restored from localStorage. And mobile uploads were failing silently until the cause surfaced: Next.js server actions cap request bodies at 1MB by default, while phone camera photos run 3&ndash;10MB.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(240px, 30%), 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="prod-tbyb-page.png" alt="Try Before You Buy package grid on the live site" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Deposit packages, live.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-tbyb-form.png" alt="Try Before You Buy prescription intake form" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Prescription intake, step by step.</figcaption></figure>
       <figure style="margin: 0;"><img src="claude-design-admin-tbyb.png" alt="Admin TBYB fulfillment view design mockup" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Admin fulfillment view, at design stage.</figcaption></figure>
@@ -213,7 +213,7 @@ security
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">A 16-check Python validator and an idempotent migration script carried that dataset in: 86 of 86 frames migrated, four brands.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(260px, 45%), 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="migration-mcp-prompt.png" alt="The MCP-driven content generation loop running in Claude Desktop" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The generation loop, running unattended.</figcaption></figure>
       <figure style="margin: 0;"><img src="prod-product-page.png" alt="Live product detail page with generated copy" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The output, on a live product page.</figcaption></figure>
     </div>
@@ -239,17 +239,17 @@ final verification: zero mismatches, every table, all brands</pre>
         <p style="font-size: 16px; line-height: 1.55; color: #333333; margin: 0; max-width: 72ch; text-wrap: pretty;">A day later a second, independent Supabase project was stood up as staging using the same pipeline, catching three environment-hygiene bugs on the way, and verified as an exact match with production across every table. One other launch-day detail worth naming: all 13 files using <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">next/image</code> were switched to native <code style="font-family: ui-monospace, Menlo, monospace; font-size: 14px;">&lt;img loading="lazy"&gt;</code>, because Vercel&rsquo;s image-optimization free tier was being exceeded across three deployments and images were failing to alt text.</p>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(260px, 45%), 1fr)); gap: 4px; margin-top: clamp(28px, 5vw, 48px);">
       <figure style="margin: 0;"><img src="frontend-prod-503-maintainence-redirect.png" alt="Maintenance mode page served during the domain cutover" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">The kill switch, mid-cutover.</figcaption></figure>
       <figure style="margin: 0;"><img src="database-prod-005.png" alt="Production database schema after the clean reimport" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">Production, after the clean reimport.</figcaption></figure>
     </div>
   </article>
 
   <sc-if value="{{ showGallery }}" hint-placeholder-val="{{ true }}">
-    <section style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
+    <section style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: clamp(28px, 5vw, 48px) 0 0 0;">
       <h2 style="font-size: clamp(30px, 6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Shipped</h2>
       <p style="font-size: 16px; line-height: 1.55; color: #4A4A4A; margin: 0 0 48px 0; max-width: 60ch;">Three storefronts on one codebase, plus the admin dashboard that runs them.</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 4px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(max(240px, 30%), 1fr)); gap: 4px;">
         <figure style="margin: 0;"><img src="prod-bikershades-landing-page.png" alt="BikerShades storefront homepage" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">bikershades.com</figcaption></figure>
         <figure style="margin: 0;"><img src="prod-prosport-landing-page.png" alt="ProSport Sunglasses storefront homepage" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">prosportsunglasses.com</figcaption></figure>
         <figure style="margin: 0;"><img src="prod-sunglass-monster-landing-page.png" alt="Sunglass Monster storefront homepage" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; display: block; background: #ECECEC;"><figcaption style="font-size: 13px; color: #6E6E6E; margin-top: 10px;">sunglassmonster.com</figcaption></figure>
@@ -264,7 +264,7 @@ final verification: zero mismatches, every table, all brands</pre>
   </sc-if>
 
   <sc-if value="{{ showTimeline }}" hint-placeholder-val="{{ true }}">
-    <section style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: 48px 0 0 0;">
+    <section style="max-width: 1080px; margin: clamp(48px, 9vw, 96px) auto 0 auto; border-top: 1px solid #000000; padding: clamp(28px, 5vw, 48px) 0 0 0;">
       <h2 style="font-size: clamp(30px, 6vw, 56px); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px 0;">Appendix &mdash; nine phases</h2>
       <p style="font-size: 16px; line-height: 1.55; color: #4A4A4A; margin: 0 0 48px 0; max-width: 60ch;">The chronological build, condensed from the session notes. Expand any phase.</p>
 
